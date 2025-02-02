@@ -1,0 +1,155 @@
+/* src/components/MovieDetails.css */
+.movie-details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    color: rgb(126, 100, 45);
+  }
+  
+  .movie-header {
+    text-align: left;
+    margin-bottom: 2rem;
+    grid-column: span 2;
+    
+  }
+  
+  .movie-header h1 {
+    font-size: 3rem;
+    margin: 0;
+    
+  }
+  
+  .tagline {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin: 0;
+    
+  }
+  
+  .director {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .description {
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+  }
+  
+  .release-year, .duration, .genres {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .movie-poster {
+    margin: 0;
+    text-align: right;
+  }
+
+
+  .movie-poster img {
+    width: 300px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .movie-background {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .movie-background img {
+    width: 50%;
+    height: auto;
+   
+    
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .movie-rating {
+    text-align: center;
+    margin-right: 30px;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .movie-actions {
+   grid-column: span 3;
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   justify-content: center;
+    
+  }
+  
+  .movie-actions button {
+    padding: 0.75rem 2rem;
+    border: 1px solid var(--gold-color);
+    background: transparent;
+    color: var(--gold-color);
+    border-radius: 9999px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .movie-actions button:hover {
+    background-color: var(--gold-color);
+    color: var(--background-dark);
+  }
+  
+  .cast-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .cast-modal-content {
+    background-color: rgb(0, 0, 0);
+    padding: 0rem 1rem 1.5rem 1rem;
+    border-radius: 0.5rem;
+    max-width: 400px;
+    width: 200px;
+    border: 0.01px solid rgb(165, 144, 27);
+    text-align: center;
+  }
+  
+  .cast-modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cast-modal-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cast-modal-content ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cast-modal-content button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--gold-color);
+    background: transparent;
+    color: var(--gold-color);
+    border-radius: 9999px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .cast-modal-content button:hover {
+    background-color: var(--gold-color);
+    color: var(--background-dark);
+  }

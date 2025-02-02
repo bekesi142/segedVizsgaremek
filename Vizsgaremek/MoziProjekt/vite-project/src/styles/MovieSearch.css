@@ -1,0 +1,143 @@
+.movie-search-container {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.search-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--goldclr);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--goldclr);
+  font-size: 1rem;
+}
+
+
+.sort-select, .filter-button {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--goldclr);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--goldclr);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sort-select:hover, .filter-button:hover {
+  background: rgba(126, 99, 37, 0.1);
+}
+
+.filter-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.filter-modal {
+  background: rgb(30, 26, 19);
+  border: 1px solid var(--goldclr);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.genre-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 1px solid var(--goldclr);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.genre-checkbox:hover {
+  background: rgba(126, 99, 37, 0.1);
+}
+
+.genre-checkbox input {
+  accent-color: var(--goldclr);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.modal-button {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--goldclr);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--goldclr);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-button:hover {
+  background: rgba(126, 99, 37, 0.1);
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.movie-card {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.movie-info {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.movie-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.movie-info p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
